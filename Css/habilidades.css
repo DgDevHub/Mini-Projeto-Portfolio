@@ -1,0 +1,107 @@
+body{
+    background-color: #202e3b;
+    overflow-x: hidden;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../Font/Montserrat-Bold.ttf') format('truetype'); /* ou 'ttf', 'woff', etc. */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segment';
+    src: url(../Font/SegmentAKeyTrial-Black.otf) format('opentype');
+}
+.Icons{
+    display: flex;
+    height: auto;
+    width: 1340px;
+    margin-left: 10px;
+    align-items: top;
+    justify-content: center;
+    gap: 40px;
+}
+.Icons img{
+    margin-top: 15px;
+    width: 100px;
+    height: 100px;
+}
+.Textos{
+    display: flex;
+    width: 1340px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Textos h2{
+    margin-top: -10px;
+     font-family: 'Segment';
+     font-size: 125px;
+     color: aliceblue;
+}
+.Textos p{
+    font-family: 'Mont';
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: -105px;
+}
+.Icons>img:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(140%);
+    transition:  0.3s ease, border 0.3s ease;
+}
+.Habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 900px;
+    height: auto;margin-top: 50px;
+    margin-left: 250px;
+}
+.Habilidades h3{
+    margin-top: -10px; 
+    margin-left: -15px; 
+    max-width: 860px; 
+    line-height: 1.2; 
+    font-family: 'Mont'; 
+    color: aliceblue; 
+    font-size: 24px
+}
+.Habilidades p {
+    margin-top: -10px; 
+    margin-left: -10px; 
+    max-width: 860px; 
+    line-height: 1.2; 
+    font-family: 'Mont'; 
+    color: aliceblue; 
+    font-size: 18px;
+}
+.Menu2 {
+    display: flex;
+    width: 500px;
+    margin-left: 450px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 50px;
+}
+.Menu2 a{
+    display: flex;
+    height: 20px;
+    width: 120px;
+    justify-content: center;
+    font-family: 'Mont';
+    background-color: aliceblue;
+     color: #202e3b;
+     text-decoration: none;
+     border: 1px solid transparent;
+     padding: 10px;
+     border-radius: 10%;
+}
+.Menu2>a:hover{
+    border: 1px solid #7DF9FF;
+    background-color: #7DF9FF;
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+    transition:  0.3s ease, border 0.3s ease;
+}

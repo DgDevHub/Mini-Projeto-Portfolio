@@ -1,0 +1,177 @@
+body{
+    background-color: #202e3b;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../Font/Montserrat-Bold.ttf') format('truetype'); /* ou 'ttf', 'woff', etc. */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segment';
+    src: url(../Font/SegmentAKeyTrial-Black.otf) format('opentype');
+}
+
+.Textos{
+    position: absolute;
+    margin-left: 350px;
+    width: 680px;
+    height: auto;
+}
+.Textos h2{
+    margin-top: 10px;
+    margin-left: 200px;
+    font-family: 'Segment';
+    color: aliceblue;
+    font-size: 100px;
+}
+.Textos p{
+    margin-top: -75px;
+    font-family: 'Mont';
+    color: aliceblue;
+}
+.Frente{
+    display: flex;
+    width: 300px;
+    height: 230px;
+    background-color: #7DF9FF;
+    color: black;
+}
+.Rotação-card{
+    position: absolute;
+    right: 320px;
+    top: 200px;
+    background-color: transparent;
+    width: 300px;
+    height: 230px;
+    perspective: 1000px;
+}
+.Interno-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.Rotação-card:hover .Interno-card {
+    transform: rotateY(180deg);
+  }
+  .Frente, .Atras {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  .Atras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7DF9FF;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .Atras a{
+    margin-top: -25px;
+    font-family: 'Segment';
+    font-size: 50px;
+    text-decoration: none;
+    color: #202e3b;
+  }
+  .Atras p{
+    margin-top: -2px;
+    font-family: 'Mont';
+    font-size: 13px;
+    text-decoration: none;
+    color: #202e3b;
+  }
+  .Frente2{
+    display: flex;
+    width: 300px;
+    height: 230px;
+    background-color: #7DF9FF;
+    color: black;
+}
+.Rotação-card2{
+    position: absolute;
+    right: 730px;
+    top: 200px;
+    background-color: transparent;
+    width: 300px;
+    height: 230px;
+    perspective: 1000px;
+}
+.Interno-card2{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+.Rotação-card2:hover .Interno-card2 {
+    transform: rotateY(180deg);
+  }
+  .Frente2, .Atras2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  .Atras2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7DF9FF;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .Atras2 a{
+    margin-top: -25px;
+    font-family: 'Segment';
+    font-size: 50px;
+    text-decoration: none;
+    color: #202e3b;
+  }
+  .Atras2 p{
+    margin-top: -2px;
+    font-family: 'Mont';
+    font-size: 13px;
+    text-decoration: none;
+    color: #202e3b;
+  }
+
+  .Menu3 {
+    position: absolute;
+    top: 480px;
+    display: flex;
+    width: 500px;
+    margin-left: 450px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
+.Menu3 a{
+    display: flex;
+    height: 20px;
+    width: 120px;
+    justify-content: center;
+    font-family: 'Mont';
+    background-color: aliceblue;
+     color: #202e3b;
+     text-decoration: none;
+     border: 1px solid transparent;
+     padding: 10px;
+     border-radius: 10%;
+}
+.Menu3>a:hover{
+    border: 1px solid #7DF9FF;
+    background-color: #7DF9FF;
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+    transition:  0.3s ease, border 0.3s ease;
+}

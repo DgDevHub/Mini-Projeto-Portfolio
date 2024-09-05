@@ -1,0 +1,77 @@
+body{
+    background-color: #202e3b;
+}
+@font-face {
+    font-family: 'Mont';
+    src: url('../Font/Montserrat-Bold.ttf') format('truetype'); /* ou 'ttf', 'woff', etc. */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segment';
+    src: url(../Font/SegmentAKeyTrial-Black.otf) format('opentype');
+}
+.Foto{
+    position: absolute;
+    width: 20px;
+    height: auto;
+    top: 50px;
+    left: 829px;
+    filter: grayscale(100%);
+}
+.Topo {
+    width: 800px;
+    height: auto;
+    padding: 20px; 
+}
+.Textos{
+    margin-top: -65px;
+}
+h1{
+    margin-left: 0; 
+    margin-bottom: 10px; 
+    font-family: 'Segment';
+    color: aliceblue;
+    font-size: 100px;
+}
+
+p {
+    margin-top: 0; 
+    margin-left: 0; 
+    max-width: 700px; 
+    line-height: 1.5; 
+    font-family: 'Mont'; 
+    color: aliceblue; 
+    font-size: 17px;
+}
+.Menu{
+    position: absolute;
+    display: flex;
+    margin-left: 100px;
+    top: 550px;
+    width: 450px;
+    height: auto;
+    justify-content: space-around;
+}
+.Menu a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Mont';
+    background-color: aliceblue;
+     color: #202e3b;
+     text-decoration: none;
+     border: 1px solid transparent;
+     padding: 10px;
+     border-radius: 10%;
+}
+.Menu>a:hover{
+    border: 1px solid #7DF9FF;
+    background-color: #7DF9FF;
+    color: rgb(0, 0, 0);
+    transform: scale(1.3);
+    transition:  0.3s ease, border 0.3s ease;
+}
+.Foto:hover{
+    filter: grayscale(0%)
+}
